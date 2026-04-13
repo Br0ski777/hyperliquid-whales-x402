@@ -35,6 +35,48 @@ Do NOT use for order book data -- use hyperliquid_get_market_data. Do NOT use fo
         },
         required: [],
       },
+      outputSchema: {
+          "type": "object",
+          "properties": {
+            "chain": {
+              "type": "string",
+              "description": "Chain (hyperliquid)"
+            },
+            "coinFilter": {
+              "type": "string",
+              "description": "Coin filter applied"
+            },
+            "results": {
+              "type": "number",
+              "description": "Number of whale aggregates"
+            },
+            "totalTraders": {
+              "type": "number",
+              "description": "Total traders analyzed"
+            },
+            "tradersWithPositions": {
+              "type": "number"
+            },
+            "overallSentiment": {
+              "type": "string",
+              "description": "Overall market sentiment"
+            },
+            "aggregates": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "timestamp": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "chain",
+            "results",
+            "aggregates"
+          ]
+        },
     },
   ],
 };
