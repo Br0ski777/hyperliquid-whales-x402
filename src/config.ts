@@ -9,7 +9,7 @@ export const API_CONFIG: ApiConfig = {
     {
       method: "GET",
       path: "/api/positions",
-      price: "$0.003",
+      price: "$0.008",
       description: "Get aggregated whale positions on Hyperliquid",
       toolName: "hyperliquid_track_whale_positions",
       toolDescription: `Use this when you need to see what the top Hyperliquid traders are doing. Returns aggregated positions of the top 50 traders ranked by PnL with full position details.
