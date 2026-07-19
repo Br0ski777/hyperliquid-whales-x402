@@ -35,7 +35,7 @@ Any x402-aware client ([`@x402/fetch`](https://www.npmjs.com/package/@x402/fetch
 
 | Tool | Method | Path | Price | Description |
 |---|---|---|---|---|
-| `hyperliquid_track_whale_positions` | GET | `/api/positions` | $0.003 | Get aggregated whale positions on Hyperliquid |
+| `hyperliquid_track_whale_positions` | GET | `/api/positions` | $0.008 | Get aggregated whale positions on Hyperliquid |
 
 ### `hyperliquid_track_whale_positions`
 
